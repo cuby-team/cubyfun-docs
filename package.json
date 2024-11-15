@@ -1,4 +1,9 @@
 {
+  "name": "docs-cubyfun",
+  "version": "0.0.1",
+  "description": "",
+  "author": "chester@cuby.fun",
+  "private": true,
   "type": "module",
   "pnpm": {
     "peerDependencyRules": {

@@ -8,6 +8,8 @@ export const shared = defineConfig({
     'en/:rest*': ':rest*',
   },
 
+  // only on github pages
+  // base: "/cubyfun-docs/",
   srcDir: './docs',
   srcExclude: ['**/README.md', '**/TODO.md'],
 
