@@ -98,8 +98,8 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: '指南',
-      link: '/zh/easyplay/instructions',
-      activeMatch: '/zh/easyplay/'
+      link: '/zh/easyplay/video_tutorial',
+      activeMatch: '/zh/',
     }
   ]
 }
@@ -107,17 +107,31 @@ function nav(): DefaultTheme.NavItem[] {
 
 function sidebar() {
   return {
-    '/zh/easyplay': {
-      base: '/zh/easyplay',
+    '/zh/': {
+      base: '/zh/',
       items: [
         {
           text: 'EasyPlay',
+          base: '/easyplay',
           collapsed: false,
           items: [
-            { text: '使用说明', link: '/instructions' },
-            { text: 'faq', link: '/faq' },
-            { text: '其他教学', link: '/teaching' }
+            { text: 'video_tutorial',link: '/video_tutorial' },
+            { text: 'ep1s_manual', link: '/manual' },
+            { text: 'other_tutorial', link: '/other_tutorial' },
+            { text: 'ep-faq', link: '/faq' }
           ]
+        },
+        {
+          text: 'Pocket2048',
+          collapsed: false,
+          base: '/pocket2048',
+          items: [{ text: 'instructions', link: '/instructions' }]
+        },
+        {
+          text: 'JOYO',
+          collapsed: false,
+          base: '/joyo',
+          items: [{ text: 'instructions', link: '/instructions' }]
         }
       ]
     }

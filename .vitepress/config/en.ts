@@ -5,7 +5,8 @@ const require = createRequire(import.meta.url)
 
 export const en = defineConfig({
   lang: 'en-US',
-  description: "CubyFun products are the perfect mixture of art, entertainment, and technology that will inspire creative souls to build a better world.",
+  description:
+    'CubyFun products are the perfect mixture of art, entertainment, and technology that will inspire creative souls to build a better world.',
 
   themeConfig: {
     nav: nav(),
@@ -28,7 +29,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: 'Guide',
-      link: '/easyplay/instructions',
+      link: '/easyplay/video_tutorial',
       activeMatch: '/'
     }
   ]
@@ -44,9 +45,10 @@ function sidebar() {
           collapsed: false,
           base: '/easyplay',
           items: [
-            { text: 'instructions11', link: '/instructions' },
-            { text: 'faq', link: '/faq' },
-            { text: 'teaching', link: '/teaching' }
+            { text: 'video_tutorial', link: '/video_tutorial' },
+            { text: 'ep1s_manual', link: '/manual' },
+            { text: 'other_tutorial', link: '/other_tutorial' },
+            { text: 'ep-faq', link: '/faq' }
           ]
         },
         {
